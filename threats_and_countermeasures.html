@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрози та протидія</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bs-primary: #8A2BE2; /* Фіолетовий */
+            --bs-primary-rgb: 138, 43, 226;
+        }
+        .bg-primary { background-color: var(--bs-primary) !important; }
+        .text-primary { color: var(--bs-primary) !important; }
+        .border-primary { border-color: var(--bs-primary) !important; }
+        
+        /* Червоний та Зелений для заголовків карток */
+        .danger-header { background-color: #dc3545 !important; border-color: #dc3545 !important; }
+        .success-header { background-color: #28a745 !important; border-color: #28a745 !important; }
+
+        .card-shadow-lg { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">ЗАГРОЗИ ТА ПРОТИДІЯ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Резюме</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="economic_security.html">Економічна безпека країни</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="threats_and_countermeasures.html">Загрози та протидія</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center text-primary mb-5 fw-bold">Стратегія зміцнення економічної безпеки</h2>
+        <div class="row">
+            
+            <div class="col-lg-6 mb-4">
+                <div class="card card-shadow-lg h-100">
+                    <div class="card-header danger-header text-white fw-bold fs-5 text-center">
+                        <i class="fas fa-exclamation-triangle me-2"></i> Основні загрози
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">🔴 "Соціальна нерівність:" Надзвичайно високий розрив у доходах, що підриває соціальну стабільність.</li>
+                            <li class="list-group-item">🔴 "Фіскальна нестійкість:" Високе та зростаюче співвідношення державного боргу до ВВП (80,81%).</li>
+                            <li class="list-group-item">🔴 "Проблеми зайнятості:" Високий рівень безробіття та значна частка неформальної зайнятості.</li>
+                            <li class="list-group-item">🔴 "Інфляційний тиск:" Ризик повернення до високої інфляції.</li>
+                            <li class="list-group-item">🔴 "Недостатній розвиток людського капіталу:" Незадовільний рівень бюджетних видатків на освіту.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card card-shadow-lg h-100">
+                    <div class="card-header success-header text-white fw-bold fs-5 text-center">
+                        <i class="fas fa-shield-alt me-2"></i> Методи протидії
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">🟢 "Податкова реформа:" Впровадження прогресивної податкової системи для зменшення нерівності.</li>
+                            <li class="list-group-item">🟢 "Консолідація бюджету:" Суворий контроль над видатками та управління держборгом.</li>
+                            <li class="list-group-item">🟢 "Формалізація економіки:" Стимулювання створення офіційних робочих місць та легалізація бізнесу.</li>
+                            <li class="list-group-item">🟢 "Жорстка монетарна політика:" Проведення цільової політики для утримання інфляції.</li>
+                            <li class="list-group-item">🟢 "Інвестиції в освіту:" Збільшення та оптимізація бюджетних видатків на людський капітал.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
